@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Для тебя ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="hearts" aria-hidden="true">
+    <span>♥</span><span>♡</span><span>♥</span><span>♡</span><span>♥</span>
+    <span>♡</span><span>♥</span><span>♡</span>
+  </div>
+
+  <header class="hero">
+    <div class="hero-card">
+      <p class="small-title">Маленький сайт с большой любовью</p>
+      <h1>Для тебя, <span>любимая полиночка</span> ❤️</h1>
+      <p class="subtitle">
+        Я сделал этот маленький уголок специально для тебя,
+        чтобы ты могла открывать его и вспоминать, как сильно я тебя люблю.
+      </p>
+      <a class="button" href="#letter">Открыть подарок</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="letter">
+      <div class="section-title">
+        <p>От меня тебе</p>
+        <h2>Письмо, которое можно перечитывать</h2>
+      </div>
+
+      <article class="letter">
+        <div class="letter-decoration">💌</div>
+        <p>Любимая,</p>
+        <p>
+          Спасибо тебе за каждый момент рядом со мной. За твои улыбки,
+          сообщения, объятия и даже за наши маленькие смешные моменты.
+        </p>
+        <p>
+          Мне очень хочется, чтобы ты всегда помнила одну вещь:
+          ты невероятно важна для меня. Я хочу видеть твою улыбку,
+          поддерживать тебя и создавать вместе с тобой как можно больше
+          счастливых воспоминаний.
+        </p>
+        <p>
+          Этот сайт — всего лишь маленький подарок, но за ним стоит
+          огромное чувство. ❤️
+        </p>
+        <p class="signature">Твой человек ♥</p>
+      </article>
+    </section>
+
+    <section class="section memories">
+      <div class="section-title">
+        <p>Наши моменты</p>
+        <h2>Здесь можно добавить ваши фотографии 📸</h2>
+      </div>
+
+      <div class="photos">
+        <div class="photo-card">
+          <div class="photo-placeholder">Твоё фото</div>
+          <span>Первый момент</span>
+        </div>
+        <div class="photo-card">
+          <div class="photo-placeholder">Твоё фото</div>
+          <span>Наш день</span>
+        </div>
+        <div class="photo-card">
+          <div class="photo-placeholder">Твоё фото</div>
+          <span>Любимое воспоминание</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="final">
+      <div class="final-card">
+        <div class="big-heart">♥</div>
+        <h2>Ты — моё любимое «случайно»</h2>
+        <p>И я бы снова выбрал встретить именно тебя.</p>
+        <button onclick="showMessage()">Нажми сюда ❤️</button>
+        <p id="secret" class="secret"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>Сделано специально для тебя · с любовью ❤️</footer>
+
+  <script>
+    function showMessage() {
+      document.getElementById("secret").textContent =
+        "Если ты это читаешь — знай: я очень тебя люблю. ❤️";
+    }
+  </script>
+</body>
+</html>
